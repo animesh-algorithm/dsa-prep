@@ -10,3 +10,9 @@ def helper(N):
     helper(N-1)
 
 pattern(5)
+
+# *
+# **
+# ***
+# ****
+# *****
