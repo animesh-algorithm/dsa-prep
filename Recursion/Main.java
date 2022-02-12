@@ -78,6 +78,12 @@ public class Main {
         return selectionSort(A, i, ++j);
     }
 
+    static ArrayList<Integer> mergeSort(ArrayList<Integer> arr) {
+        if (arr.size() == 1) return arr;
+        int mid = arr.size()/2;
+        ArrayList<Integer> left = mergeSort(arr, 0, mid)
+    }
+
     static ArrayList<Integer> mergeSortedArrays(ArrayList<Integer> A, ArrayList<Integer> B) {
         int i = 0;
         int j = 0;
