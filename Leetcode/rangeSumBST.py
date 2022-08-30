@@ -15,3 +15,15 @@ class Solution:
             sum = fun(root.right, low, high, sum)
             return sum
         return fun(root, low, high, 0)
+class Solution1:
+    sum = 0 
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        def fun(root, low, high):
+            if root == None:
+                return
+            if root.val >= low and root.val <= high:
+                self.sum+=root.val
+            fun(root.left, low, high)
+            fun(root.right, low, high)
+            return self.sum
+        return fun(root, low, high)
