@@ -13,3 +13,12 @@ class Solution:
             p = c
             c = n
         return p
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        def fun(head, prev):
+            if head == None:
+                return prev
+            next = head.next
+            head.next = prev
+            return fun(next, head)
+        return fun(head, None)
