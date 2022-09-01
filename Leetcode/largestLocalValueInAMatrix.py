@@ -13,3 +13,4 @@ class Solution:
             for j in range(n-2):
                 maxLocal[i][j] = findMax(i, j, i+2, j+2)
         return maxLocal
+        
