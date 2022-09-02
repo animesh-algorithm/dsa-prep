@@ -27,3 +27,16 @@ class Solution:
                 maxA = currA
             j+=1
         return maxA
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        i=0
+        j=len(height)-1
+        maxA = float("-inf")
+        while i<j:
+            currA = min(height[i], height[j])*(j-i)
+            maxA = max(maxA, currA)
+            if height[i] > height[j]:
+                j-=1
+            else:
+                i+=1
+        return maxA
