@@ -10,7 +10,7 @@ class Solution:
                 arr.insert(i+1, 0)
                 i = i+2
                 continue
-            i + = 1
+            i += 1
         n1 = len(arr)
         for i in range(n1-n):
             arr.pop()
