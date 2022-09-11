@@ -22,3 +22,13 @@ class Solution:
                 res = no
             num[i] = temp
         return res
+
+
+class Solution:
+    def maximum69Number(self, num: int) -> int:
+        num = str(num)
+        for i in range(len(num)):
+            if num[i] == '6':
+                num = num.replace('6', '9', 1)
+                break
+        return int(num)
