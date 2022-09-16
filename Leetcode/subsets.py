@@ -7,4 +7,4 @@ class Solution:
             fun(pick+[nums[0]], nums[1:], res)
             fun(pick, nums[1:], res)
             return res
-        return fun([], nums,[])
+        return fun([], nums, [])
