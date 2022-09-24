@@ -1,5 +1,5 @@
 import random
-A = [6, 5, 4, 3, 2, 1, 12, 10]
+A = [6, 5, 4, 3, 2, 1, 12, 10, 11]
 
 def quickSort(A, low, high):
     # base case
