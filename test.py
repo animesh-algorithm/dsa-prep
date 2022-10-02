@@ -1,10 +1,13 @@
-str = "Shri Vaishnav Vidyapeeth Vishwavidyalaya"
-
-vowelsCount = 0
-vowels = ['a', 'e', 'i', 'o', 'u']
-
-for char in str:
-    if char.lower() in vowels:
-        vowelsCount = vowelsCount+1
-
-print(vowelsCount)
+a=2
+b=4
+c=6
+lcm = a
+if b>a:
+    lcm=b
+if c>lcm:
+    lcm=c
+while True:
+    if lcm%a==0 and lcm%b==0 and lcm%c==0:
+        break
+    lcm+=1
+print(lcm)
